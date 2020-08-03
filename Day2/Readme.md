@@ -80,7 +80,7 @@ hoisting();
     }
     console.log(a); // Error
     console.log(b); // Error
-    console.log(3); // 3
+    console.log(c); // 3
 ```
 
 5. Execution context :
@@ -113,6 +113,9 @@ a.printName();              // Mridul
 a.printName.apply(this);    // Morgan
 ```
 - function.call(), function.bind(), function.apply() provide same functionality but with different syntax
+- Case 1 : ObjectName.functionName() => this = ObjectName
+- Case 2 : functionName() => this = Window (global)
+
 
 ## Further Reading
 - [https://scotch.io/tutorials/understanding-scope-in-javascript](https://scotch.io/tutorials/understanding-scope-in-javascript)
