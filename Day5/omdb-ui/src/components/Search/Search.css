@@ -1,0 +1,19 @@
+.background {
+    background: rgb(2,0,36);
+    background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 6%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+}
+
+.search {
+    height: 38px;
+    width: 350px;
+}
+  
+.clear-margin-top {
+    margin-top: -16px;
+}
