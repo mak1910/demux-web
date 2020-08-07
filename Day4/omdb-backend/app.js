@@ -21,5 +21,8 @@ app.use(cookieParser());
 // 2. Execute a function and return a response
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/omdb', omdbRouter);
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 module.exports = app;
